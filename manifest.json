@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "translate",
+  "version": "1.0",
+  "description": "this extension translates the displayed language into a user-chosen language",
+  "permissions": ["activeTab"],
+
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["./translate.js"]
+    }
+  ]
+}
